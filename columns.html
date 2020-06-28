@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel ="stylesheet" href="style.css"/>
+    <title>B4 Columns</title>
+</head>
+<body>
+
+    <div class ="container">
+        <h1>Columns </h1>
+        <div class="row">
+            <div class = "col"> col </div>
+            <div class = "col"> col </div>
+            <div class = "col"> col </div>
+        </div>
+        <h6>Observation:</h6>
+        <span>No matter how many colums you insert in the row each col occupies equally</span>
+    </div>
+
+    <div class ="container">
+        <h1> Set sizes </h1>
+        <div class="row">
+            <div class = "col-2"> col-2 </div>
+            <div class = "col-6"> col-6 </div>
+            <div class = "col-4"> col-4 </div>
+        </div>
+        <h6>Observation:</h6>
+        <p>Col occupies according to the size decalred total size can occupied in a row is 12</p>
+    </div>
+
+
+    <div class ="container">
+        <h1> Break Points </h1>
+        <div class="row">
+            <div class = "col-sm"> col-sm </div>
+            <div class = "col-sm"> col-sm </div>
+            <div class = "col-sm"> col-sm </div>
+        </div>
+        <h6>Observation:</h6>
+        <p>Avail break points are sm , md, lg and we used sm so when the screen reaches that break point it stacks up</p>
+    </div>
+
+    <div class ="container">
+        <h1> Sizes and Breakpoints </h1>
+        <div class="row">
+            <div class = "col-sm-5"> col-sm-5 </div>
+            <div class = "col-sm-1"> col-sm-1 </div>
+            <div class = "col-sm-6"> col-sm-6 </div>
+        </div>
+        <h6>Observation:</h6>
+        <p>Used sm so when the screen reaches that break point it stacks up and in screens greator tham sm it holds given colums size</p>
+    </div>
+
+    <div class ="container">
+        <h1> No Gutter </h1>
+        <div class="row no-gutters">
+            <div class = "col-sm-5"> col-sm-5 </div>
+            <div class = "col-sm-1"> col-sm-1 </div>
+            <div class = "col-sm-6"> col-sm-6 </div>
+        </div>
+        <h6>Observation:</h6>
+        <p>Default padding and margins will be removed</p>
+    </div>
+
+    
+    <div class ="container">
+        <h1> Offset </h1>
+        <div class="row no-gutters">
+            <div class = "col-5"> col-5 </div>
+            <div class = "col-6 offset-1"> <--- offset-1 col-6 </div>
+        </div>
+        <h6>Observation:</h6>
+        <p>Offset-x occupies x size in that column and  offset+columns should not cross 12 in this case 5 (first col ) + 6 (second col) + 1(offset) = 12 </p>
+    </div>
+  
+    <div class ="container">
+        <h1> Mix and Match  </h1>
+        <div class="row ">
+            <div class = "col-sm-6 col-md-3"> col-sm-6 col-md-3 </div>
+            <div class = "col-sm-6 col-md-3"> col-sm-6 col-md-3  </div>
+            <div class = "col-sm-6 col-md-3"> col-sm-6 col-md-3  </div>
+            <div class = "col-sm-6 col-md-3"> col-sm-6 col-md-3 </div>
+        </div>
+        <h6>Observation:</h6>
+        <p>We can tell from xs to sm it will be having 2x2 and from md to xl it will hold md size which is 4x1 </p>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
